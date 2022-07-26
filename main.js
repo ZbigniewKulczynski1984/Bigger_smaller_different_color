@@ -11,9 +11,24 @@ const increase = () => {
 }
 
 const decrease = () => {
+    if(fontSize <= 21) {
+        return
+    }
     fontSize -= 5
     p.style.fontSize = fontSize + 'px'
 }
 
+const colorChanger = () => {
+
+    const r = Math.floor(Math.random() *255)
+    const g = Math.floor(Math.random() *255)
+    const b = Math.floor(Math.random() *255)
+
+    // console.log(r);
+
+    p.style.color = `rgb(${r},${g},${b})`
+}
+
 sizeUp.addEventListener('click', increase)
 sizeDown.addEventListener('click', decrease)
+colorBtn.addEventListener('click', colorChanger)
