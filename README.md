@@ -2,9 +2,9 @@
 Powiększ, pomnijesc, zmień kolor
 
 ##Buit With
-HTML
-CSS
-JS
+- HTML
+- CSS
+- JS
 
 ##Autor
 Zbigniew Kulczyński
